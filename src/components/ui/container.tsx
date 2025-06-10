@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { type ReactNode } from 'react'
 
-const Container = () => {
+
+type ContainerProps = {
+    children:ReactNode
+} & React.ComponentProps<"div">
+const Container = ({children}:ContainerProps) => {
   return (
-    <div>Container</div>
+    <div>
+        {children}
+    </div>
   )
 }
 
