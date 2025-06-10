@@ -3,11 +3,11 @@ import { twMerge } from 'tailwind-merge'
 
 
 type ContainerProps = {
-    children:ReactNode
-} & React.ComponentProps<"div">
+    children:ReactNode,
+} & React.ComponentProps<"div"> 
 const Container = ({children,className,...props}:ContainerProps) => {
   return (
-    <div className={twMerge("px-40",className)} {...props}>
+    <div className={twMerge("px-20",className)} {...props}>
         {children}
     </div>
   )
