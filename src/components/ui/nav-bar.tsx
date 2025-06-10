@@ -1,9 +1,12 @@
 import React from 'react'
 import Button from './button'
 
+        // inputRef: React.RefObject<null>
+    // const ref = inputRef || useRef<HTMLInputElement>(null)
+
 const Navbar = () => {
   return (
-    <div className='flex w-dvw justify-between'>
+    <div className='flex w-dvw justify-between px-20 items-center py-3'>
         <span>
             Logo
         </span>
